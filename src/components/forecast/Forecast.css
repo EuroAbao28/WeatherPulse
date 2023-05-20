@@ -1,0 +1,64 @@
+@keyframes inPop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.forecast-contianer {
+  animation: 0.5s ease-in-out inPop;
+}
+.header {
+  font-size: 1.2em;
+  margin: 1rem 0;
+}
+.accordion {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.accordion-default {
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.accordion-default .icon {
+  width: 1.5rem;
+}
+
+.accordion-default .date {
+  flex: 1;
+  margin-left: 0.5rem;
+}
+
+.accordion-default .day {
+  flex: 1;
+  margin-left: 0.5rem;
+}
+
+.accordion-default .description {
+  flex: 1;
+  margin-right: 0.5rem;
+  opacity: 0.7;
+  text-align: right;
+  text-transform: capitalize;
+}
+
+.accordion-full-details {
+  display: flex;
+}
+
+.item-details {
+  flex: 1;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.accordion-full-details .side {
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
